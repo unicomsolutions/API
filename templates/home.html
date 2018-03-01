@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | TripsBro</title>
+
+</head>
+<body>
+<header>  About the page</header>
+<p>This is an example of a RESTful API. This API has three elements:-
+    <ul>
+     <li>Add a new User</li>
+    <li>Checkout a user profile</li>
+    <li>See our esteemed user</li>
+</ul>
+
+</p>
+<ul id="new_account">
+
+    <li> <a target="_blank" href="/userlogin"> Add new user?</a></li>
+    <li> <a target="_blank" href="/toggle"> get camera feedback</a></li>
+    <li> <a target="_blank" href="/"> Add new user?</a></li>
+
+</ul>
+
+
+
+<h2>our users: </h2>
+    {% for user in myuser %}
+    <li>{{user.username}}</li>
+    {% endfor %}
+
+</body>
+</html>
